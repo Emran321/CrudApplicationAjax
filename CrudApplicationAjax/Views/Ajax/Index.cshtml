@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<button class="btn btn-sm btn-primary m-2" id="btnAddEmployee">Add Employee</button>
+<table class="table table-bordered">
+    <thead>
+        <tr class="text-center">
+            <th>ID</th>
+            <th>Name</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Salary</th>
+            <th>Operation</th>
+        </tr>
+    </thead>
+
+    <tbody class="text-center" id="table_data"></tbody>
+</table>
+
+<div class="modal fade modal"  id="EmployeeModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="text-info modal-title">Add Employee</h1>
+                <button class="close text-danger" data-dismiss="modal">&tilde;</button>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <in
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    <input type="hidden" id="urlEmployeeData" value="@Url.Action("EmployeeList","Ajax")" />
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/custom.js"></script>
