@@ -23,18 +23,38 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="text-info modal-title">Add Employee</h1>
+                <h1 class="text-info modal-title" id="employeeHeading">Add Employee</h1>
                 <button class="close text-danger" data-dismiss="modal">&tilde;</button>
             </div>
             <div class="modal-body">
                 <form method="post">
+                    <div class="form-group" id="empId">
+                        <label>ID</label>
+                        <input type="text" class="form-control" id="EmployeeId" disabled="disabled" />
+                    </div>
                     <div class="form-group">
                         <label>Name</label>
-                        <in
+                        <input type="text" palceholder="Enter Name" class="form-control" id="name" />
+                    </div>
+                    <div class="form-group">
+                        <label>State</label>
+                        <input type="text" palceholder="Enter State" class="form-control" id="state" />
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" palceholder="Enter City" class="form-control" id="city" />
+                    </div>
+                    <div class="form-group">
+                        <label>Salary</label>
+                        <input type="text" palceholder="Enter Salary" class="form-control" id="salary" />
                     </div>
                 </form>
             </div>
-            <div class="modal-footer"></div>
+            <div class="modal-footer">
+                <button class="btn btn-primary"  onclick="AddEmployee()" id="AddEmployee">Save</button>
+                <button class="btn btn-warning" onclick=" UpdateEmployee()" style="display:none" id="btnUpdate">Update</button>
+                <button class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>
@@ -47,4 +67,4 @@
 
 <script src="~/lib/jquery/dist/jquery.js"></script>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/js/custom.js"></script>
+<script src="~/js/site.js"></script>
