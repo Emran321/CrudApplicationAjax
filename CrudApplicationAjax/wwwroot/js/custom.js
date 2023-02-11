@@ -3,7 +3,6 @@
 });
 
 function ShowEmployeeData() {
-    debugger
     var url = $('#urlEmployeeData').val();
     $.ajax({
         url: url,
